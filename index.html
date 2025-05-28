@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work_Vin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #F97316; /* оранжевый */
+      --bg-color: #111827;
+      --text-color: #F9FAFB;
+      --card-bg: #1F2937;
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .button-outline {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid var(--main-color);
+      color: #fff;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      transition: 0.3s;
+    }
+
+    .button-outline:hover {
+      background-color: var(--main-color);
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--main-color);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #1F2937;
+      border-radius: var(--radius);
+    }
+
+    .contact a {
+      color: var(--main-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .money {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: flyDown linear infinite;
+      z-index: 1;
+      opacity: 0.4;
+    }
+
+    @keyframes flyDown {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+      }
+      20% { opacity: 1; }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .button-outline {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Деньги -->
+<div class="money" style="left: 10%; animation-duration: 8s;"></div>
+<div class="money" style="left: 40%; animation-duration: 11s;"></div>
+<div class="money" style="left: 70%; animation-duration: 13s;"></div>
+
+<header>
+  <h1>Work_Vin</h1>
+  <a href="#contact" class="button-outline">ПОДАТЬ ЗАЯВКУ</a>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Умови роботи</h2>
+    <ul>
+      <li>💰 Зарплата: від 20 000 грн</li>
+      <li>🕒 Графік: з 11:00 до 19:00 (5/7)</li>
+      <li>👥 Підходить активній молоді (від 18 років)</li>
+      <li>📚 Досвід не обов’язковий — всьому навчимо</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Зв’язатися з нами</h2>
+  <p>Пиши в Telegram 👉 <a href="https://t.me/arbitrazh_h" target="_blank">@arbitrazh_h</a></p>
+</section>
+
+</body>
+</html>
