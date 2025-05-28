@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work_Vin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --main-color: #F97316;
+      --main-color: #f97316;
       --bg-color: #111827;
-      --text-color: #F9FAFB;
-      --card-bg: #1F2937;
+      --text-color: #f9fafb;
+      --card-bg: #1f2937;
       --radius: 12px;
       --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
@@ -22,7 +22,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
       line-height: 1.6;
@@ -89,7 +89,7 @@
     .contact {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #1F2937;
+      background-color: #1f2937;
       border-radius: var(--radius);
     }
 
@@ -102,22 +102,25 @@
 
     .money {
       position: fixed;
-      width: 30px;
-      height: 30px;
-      background-image: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png');
+      width: 70px;
+      height: 70px;
+      background-image: url('https://i.ibb.co/tTC1SC57/Usdollar100front.png');
       background-size: contain;
       background-repeat: no-repeat;
       animation: flyDown linear infinite;
       z-index: 1;
-      opacity: 0.4;
+      opacity: 0.6;
+      pointer-events: none;
     }
 
     @keyframes flyDown {
       0% {
-        transform: translateY(-50px) rotate(0deg);
+        transform: translateY(-60px) rotate(0deg);
         opacity: 0;
       }
-      20% { opacity: 1; }
+      20% {
+        opacity: 1;
+      }
       100% {
         transform: translateY(110vh) rotate(360deg);
         opacity: 0;
@@ -128,6 +131,7 @@
       header h1 {
         font-size: 2rem;
       }
+
       .button-outline {
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
@@ -137,32 +141,34 @@
 </head>
 <body>
 
-<!-- Деньги -->
-<div class="money" style="left: 10%; animation-duration: 8s;"></div>
-<div class="money" style="left: 40%; animation-duration: 11s;"></div>
-<div class="money" style="left: 70%; animation-duration: 13s;"></div>
+  <!-- Падающие иконки -->
+  <div class="money" style="left: 10%; animation-duration: 8s;"></div>
+  <div class="money" style="left: 30%; animation-duration: 12s;"></div>
+  <div class="money" style="left: 50%; animation-duration: 10s;"></div>
+  <div class="money" style="left: 70%; animation-duration: 14s;"></div>
+  <div class="money" style="left: 90%; animation-duration: 9s;"></div>
 
-<header>
-  <h1>Work_Vin</h1>
-  <a href="https://t.me/arbitrazh_h" target="_blank" class="button-outline">ПОДАТЬ ЗАЯВКУ</a>
-</header>
+  <header>
+    <h1>Work_Vin</h1>
+    <a href="https://t.me/arbitrazh_h" target="_blank" class="button-outline">ПОДАТЬ ЗАЯВКУ</a>
+  </header>
 
-<section>
-  <div class="card">
-    <h2>Умови роботи</h2>
-    <ul>
-      <li>💰 Зарплата: від 20 000 грн</li>
-      <li>🕒 Графік: з 11:00 до 19:00 (5/7)</li>
-      <li>👥 Підходить активній молоді (від 18 років)</li>
-      <li>📚 Досвід не обов’язковий — всьому навчимо</li>
-    </ul>
-  </div>
-</section>
+  <section>
+    <div class="card">
+      <h2>Умови роботи</h2>
+      <ul>
+        <li>💰 Зарплата: від 20 000 грн</li>
+        <li>🕒 Графік: з 11:00 до 19:00 (5/7)</li>
+        <li>👥 Підходить активній молоді (від 18 років)</li>
+        <li>📚 Досвід не обов’язковий — всьому навчимо</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="contact" class="contact">
-  <h2>Зв’язатися з нами</h2>
-  <p>Пиши в Telegram 👉 <a href="https://t.me/arbitrazh_h" target="_blank">@arbitrazh_h</a></p>
-</section>
+  <section id="contact" class="contact">
+    <h2>Зв’язатися з нами</h2>
+    <p>Пиши в Telegram 👉 <a href="https://t.me/arbitrazh_h" target="_blank">@arbitrazh_h</a></p>
+  </section>
 
 </body>
 </html>
